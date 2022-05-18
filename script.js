@@ -64,10 +64,12 @@ function generatePassword(){
   }
   //This chooses random letters, numbers, special characters, and creates the password with the given length that the user has inputted.
   for (var index = 0; index < characterLength; index++){
-  //charAt is a function that returns the character from the chosen index.
+  //charAt is a function that returns the character from the chosen index, also looked up on google to make the best use.
     userPassword += userCharacters.charAt(Math.floor(Math.random() * userCharacters.length));
   }
   return  userPassword;
+
+  var confirmPassword = confirm ("Do you like this password?");
 }
 
 //function for upperCase generation
