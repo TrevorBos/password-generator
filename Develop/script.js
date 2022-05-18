@@ -44,10 +44,12 @@ function generatePassword(){
   var confirmNumbers = confirm("Would you like your password to have NUMBERS in it?");
   var confirmSpecial = confirm("Would you like your password to have SPECIAL characters in it?");
 
+  //adding the "!" infront of these variables checks to see if they are NOT true.
   if (!confirmUpper && !confirmLower && !confirmNumbers && !confirmSpecial){
     alert("Please choose at least one character type!");
     return generatePassword()
   }
+  //Checks to see if they are true.
   if (confirmUpper){
     userCharacters += upperCase
   }
@@ -60,7 +62,7 @@ function generatePassword(){
   if (confirmSpecial) {
     userCharacters += specialCharacters
   }
-
+  //This chooses random letters, numbers, special characters, and creates the password with the given length that the user has inputted.
   for (var index = 0; index < characterLength; index++){
   //charAt is a function that returns the character from the chosen index.
     userPassword += userCharacters.charAt(Math.floor(Math.random() * userCharacters.length));
