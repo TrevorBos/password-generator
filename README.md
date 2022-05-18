@@ -2,7 +2,7 @@
 Challenge 3 from the UofT Bootcamp
 
 ## Purpose
-A website allows you the ability to create a password with specific conditions (Uppercase, Lowercase, Special Characters, and numbers).
+A website that allows you the ability to create a password with specific conditions (Uppercase, Lowercase, Special Characters, and numbers).
 
 ## Built With
 HTML
