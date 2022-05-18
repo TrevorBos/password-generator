@@ -37,6 +37,12 @@ function generatePassword(){
     alert ("Please choose numbers between 8 and 128!")
     return generatePassword();
   }
+
+//Display prompts asking the user to choose what specifics they would like their password to have
+  var confirmUpper = confirm("Would you like your password to have UPPER case letters?");
+  var confirmLower = confirm("Would you like your password to have LOWER case letters?");
+  var confirmNumbers = confirm("Would you like your password to have NUMBERS in it?");
+  var confirmSpecial = confirm("Would you like your password to have SPECIAL characters in it?");
 }
 
 //function for upperCase generation
